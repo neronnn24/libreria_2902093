@@ -55,13 +55,13 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService (){
         List<UserDetails> userDetailslist = new ArrayList<>();
 
-        userDetailslist.add( User.withUsername("Santiago")
+        userDetailslist.add( User.withUsername("Joan")
                 .password("1234")
                 .roles("ADMIN")
                 .authorities("READ", "CREATE")
                 .build());
 
-        userDetailslist.add( User.withUsername("Estiven")
+        userDetailslist.add( User.withUsername("Andres")
                 .password("1234")
                 .roles("USER")
                 .authorities("READ")
